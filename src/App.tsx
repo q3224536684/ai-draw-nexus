@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { TooltipProvider, Toaster } from '@/components/ui'
 import { HomePage, ProjectsPage, EditorPage, ProfilePage, AboutPage } from '@/pages'
+import { DisclaimerDialog } from '@/components/layout/DisclaimerDialog'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Toaster />
+      <DisclaimerDialog />
     </TooltipProvider>
   )
 }
