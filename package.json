@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "concurrently \"pnpm run dev:frontend\" \"pnpm run dev:backend\"",
     "dev:frontend": "vite",
+    "dev:new": "concurrently \"pnpm run dev:frontend\" \"cd server && pnpm run dev\"",
     "dev:backend": "wrangler pages dev --compatibility-date=2024-01-01 --proxy=5173",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
